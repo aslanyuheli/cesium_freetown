@@ -3,32 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <title>Cesium Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Cesium JS and CSS -->
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.132/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.132/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
   <link href="stylesheet.css" rel="stylesheet">
+
+  <!-- Cesium App -->
   <script type="module" src="main.js"></script>
-  <style>
-    html, body, #cesiumContainer {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-  </style>
 </head>
 <body>
+
   <div class="description">
-    <h2>Urban cooling corridor construction planning for Freetown, Sierra Leone</h2> </div>
-  <p>This project aims to design a cooling corridor system in Freetown, Sierra Leone that maximizes cooling benefits of urban trees at lowest cost.
-      It connects existing regions of maximum heat exposure, dense regions of urban amenities, socio-economic activities and past planting sites 
-      from the city's planting campaign. The corridor is designed to follow the street systems of Freetown, with minor mismatches due to lack of 
-      geospatial and remote sensing data in the city.
-  </p>
-  <div class="visualizepage">
-      <div class="wrapper">
-        <div id="cesiumContainer"></div>
-      </div>
+    <h2>Urban Cooling Corridor Construction Planning for Freetown, Sierra Leone</h2>
+    <p>This project aims to design a cooling corridor system in Freetown, Sierra Leone that maximizes the cooling benefits of urban trees at the lowest cost.
+    It connects areas of high heat exposure, urban amenities, socio-economic activity, and past planting sites from the city's campaign. The corridor follows
+    Freetown’s street systems, with some deviations due to data limitations.</p>
   </div>
+
+  <div class="visualizepage">
+    <div class="wrapper">
+      <div id="cesiumContainer"></div>
+    </div>
+  </div>
+
+  <div class="Workflow">
+      <h3>The Workflow is as Follows</h3>
+      <img src="assets/img/freetown_workflow.png" alt="Workflow diagram">
+  </div>
+
 </body>
 </html>

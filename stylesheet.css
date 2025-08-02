@@ -3,12 +3,31 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
-#cesiumContainer {
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+.description {
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 15px;
+  font-family: sans-serif;
+  z-index: 1000; /* Ensure it appears above Cesium */
 }
+
+.visualizepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 80%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc; /* optional visual boundary */
+}
+

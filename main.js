@@ -48,10 +48,10 @@ async function loadCategorizedPoints( categoryProperty = "Node") {
 
       // Define your category-to-color map
       const colorMap = {
-        'bluegreen': Cesium.Color.RED,
-        'POI': Cesium.Color.BLUE,
-        'nightlight': Cesium.Color.GREEN,
-        'airtemp': Cesium.Color.GRAY
+        'bluegreen': Cesium.Color.BLUE,
+        'POI': Cesium.Color.PALEVIOLETRED,
+        'nightlight': Cesium.Color.DARKMAGENTA ,
+        'airtemp': Cesium.Color.RED
       };
 
       const pointColor = colorMap[category] || colorMap.default;

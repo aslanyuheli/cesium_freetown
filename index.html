@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Cesium Visualizer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <!-- Cesium JS and CSS -->
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.132/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.132/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
@@ -12,12 +11,12 @@
   <!-- Custom Styles -->
   <link href="stylesheet.css" rel="stylesheet">
 
-  <!-- Cesium App -->
+  <!-- Main JS -->
   <script type="module" src="main.js"></script>
 </head>
 <body>
-
   <div class="description">
+    <div class="status-badge">Completed Consultation project</div>
     <h2>Urban Cooling Corridor Construction Planning for Freetown, Sierra Leone</h2>
     <p>This project aims to design a cooling corridor system in Freetown, Sierra Leone that maximizes the cooling benefits of urban trees at the lowest cost.
     It connects areas of high heat exposure, urban amenities, socio-economic activity, and past planting sites from the city's campaign. The corridor follows
@@ -30,9 +29,34 @@
     </div>
   </div>
 
-  <div class="Workflow">
-      <h3>The Workflow is as Follows</h3>
-      <img src="assets/img/freetown_workflow.png" alt="Workflow diagram">
+  <div class="workflow">
+    <h3>The Workflow is as Follows</h3>
+    <img src="assets/img/freetown_workflow.png" alt="Workflow diagram">
+    <div class="workflow_words">
+      <p>To construct a resistance surface that represents both the need in heat mitigation and existing green spaces that need to be connected, this project integrates
+        remote sensing data from various sources. It includes: Sentinel world cover, VIIRS dark marble (mosaiced through GEE), NOAA air temperature of three daily periods,
+        urban amenities (POIs from Google Map API), existing tree planting records (digitized from Freetown Treetracker). We were able to identify top regions of interest,
+        and generate "Nodes" of urban forest networks that can be connected through tree corridors.<br>
+        The project result involves three kinds of products:
+        <ul>
+          <li><el>ArcGIS Model Builder: </el>a model that generates different iterations of cooling corridors as a random "Cooling Node" is selected in a hotspot region. The user
+          can also input nodes of their choice into the model to generate cooling corridors of lowest cost. The idea of randomness here aims to accomodate the lack of data coverage 
+          and resolution in Global South countries. It also incorporates the fact that policy making in Freetown is largely dependent on community-engaed decision making.</li>
+          <li><el>Conceptual cooling corridor:  </el>several cooling corridor plans that do not involve road system. It aims to provide a conceptual suggests on potential regions of
+            tree planting to connect communities at a regional scale.
+          </li>
+          <li><el>Cooling corridor along roads: </el>this version of the product takes into account the road systems in Freetown. In this plan, trees are planted along existing roads
+          as record in Open Street Map (OSM). However, field works and industrial responses have suggested that the OSM network is partially outdated and there is no existing reliable opensource dataset 
+          reliable in Freetown.</li>
+        </ul>
+      </p>
+    </div>
+    <img src="assets/img/freetown_modelbuilder.png" alt="Model Builder">
+    <div class= "subtitle"><p>Model Builder, ArcGIS Pro</p></div>
+    <img src="assets/img/freetown_1.png" alt="Conceptual Corridor">
+    <div class= "subtitle"><p>Conceptual corridors</p></div>
+    <img src="assets/img/freetown_2.png" alt="Road Corridor Syste,">
+    <div class= "subtitle"><p>Corridors over road systems</p></div>
   </div>
 
 </body>
